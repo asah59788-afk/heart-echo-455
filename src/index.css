@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1f2937;
+    background-color: #fcfbf9;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+/* Custom smooth animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes pulseSubtle {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.04); opacity: 1; }
+}
+
+@keyframes flickerFlame {
+  0%, 100% { transform: scale(1) rotate(-1deg); filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.9)); }
+  25% { transform: scale(1.08, 0.94) rotate(1deg); filter: drop-shadow(0 0 14px rgba(245, 158, 11, 0.95)); }
+  50% { transform: scale(0.95, 1.05) rotate(-2deg); filter: drop-shadow(0 0 10px rgba(251, 146, 60, 0.85)); }
+  75% { transform: scale(1.04, 0.98) rotate(2deg); filter: drop-shadow(0 0 12px rgba(251, 191, 36, 0.9)); }
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 2.5s ease-in-out infinite;
+}
+
+.animate-flame {
+  animation: flickerFlame 0.8s infinite alternate ease-in-out;
+}

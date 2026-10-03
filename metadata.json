@@ -1,0 +1,6 @@
+{
+  "name": "LoveCraft - Interactive Digital Gifting",
+  "description": "Personalized, interactive, and gamified digital cards and celebrations with balloon popping, candle blowing, photo puzzles, and unrejectable proposals.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
